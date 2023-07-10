@@ -1,0 +1,8 @@
+<p *ngIf="originalUrl === '' && error === undefined">Redirecting you.......</p>
+<div *ngIf="originalUrl !== ''">
+    <div>Redirecting you now to:</div>
+    <p>{{ originalUrl }}</p>
+</div>
+<div *ngIf="error">
+    <div>{{ error.status }} {{ error.statusText }}</div>
+</div>

@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <div class="bg"></div>
+    <div class="text">
+        <h1>Land Refund</h1>
+        <p>Tired of your long urls? Hang with us!</p>
+    </div>
+    <div class="input-wrap">
+        <form [formGroup]="form">
+            <input
+                formControlName="url"
+                type="text"
+                placeholder="Put your url here to shorten it"
+            />
+        </form>
+        <div *ngIf="recievedUrl !== ''">
+            {{ recievedUrl }}
+            <button
+                *ngIf="recievedUrl !== 'Entered url is not valid'"
+                (click)="copyToclipBoard()"
+            >
+                Copy
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>About us</p>
+        <p>Contacts</p>
+        <p>Our Cause</p>
+    </div>
+</div>
