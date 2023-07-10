@@ -8,7 +8,7 @@ If you wish to build the repo locally you will need:
 2. node
 3. local Postgre DB
 
-After closing the repo make sure to install the requared dependencies though composer and npm respectively.
+After cloning the repo make sure to install the required dependencies though composer and npm respectively.
 
 Make sure to run the db migrations before using the project so your db can be up to date. You can change the connection string in `cake-back-end/config/app.php::284`
 
